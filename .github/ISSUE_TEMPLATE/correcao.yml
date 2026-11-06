@@ -1,0 +1,22 @@
+name: Correção
+description: Algo está errado, desatualizado ou sem fonte
+labels: [bug]
+body:
+  - type: input
+    id: local
+    attributes:
+      label: Arquivo ou tópico
+      placeholder: "Ex.: 01-principios-de-design/solid/lsp/README.md"
+    validations:
+      required: true
+  - type: textarea
+    id: problema
+    attributes:
+      label: O que está errado
+    validations:
+      required: true
+  - type: textarea
+    id: fonte
+    attributes:
+      label: Fonte que comprova
+      description: Link para a documentação, especificação ou publicação original.

@@ -1,0 +1,38 @@
+name: Sugestão de conteúdo
+description: Proponha um novo princípio, prática ou exemplo
+labels: [enhancement]
+body:
+  - type: input
+    id: topico
+    attributes:
+      label: Tópico
+      placeholder: "Ex.: Strangler Fig, Outbox, Rate limiting"
+    validations:
+      required: true
+  - type: dropdown
+    id: secao
+    attributes:
+      label: Seção
+      options:
+        - 01. Princípios de design
+        - 02. Código limpo
+        - 03. Arquitetura
+        - 04. Testes
+        - 05. Segurança
+        - 06. Operabilidade
+        - 07. Design de API
+        - 08. Git e GitHub
+        - Checklists
+    validations:
+      required: true
+  - type: textarea
+    id: motivacao
+    attributes:
+      label: Que problema o tópico resolve?
+    validations:
+      required: true
+  - type: textarea
+    id: fontes
+    attributes:
+      label: Fontes
+      description: Autor, ano e link da fonte original.
