@@ -78,4 +78,4 @@ Pontos práticos:
 ## Referências
 
 - Documentação do [Hypothesis](https://hypothesis.readthedocs.io/en/latest/) (incluindo "What you can generate and how").
-- Koen Claessen e John Hughes, [*QuickCheck: a lightweight tool for random testing of Haskell programs*](https://doi.org/10.1145/351240.351266), ICFP 2000.
+- Koen Claessen e John Hughes, [*QuickCheck: a lightweight tool for random testing of Haskell programs*](https://www.cs.tufts.edu/~nr/cs257/archive/john-hughes/quick.pdf), ICFP 2000 (DOI 10.1145/351240.351266).
