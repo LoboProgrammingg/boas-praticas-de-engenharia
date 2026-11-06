@@ -67,6 +67,6 @@ jobs:
         with:
           args: >-
             --no-progress --max-retries 3 --accept 200,206,429
-            --exclude 'linkedin\.com' --exclude-path node_modules --exclude-path .venv
+            --exclude 'linkedin\.com' --exclude 'planalto\.gov\.br' --exclude-path node_modules --exclude-path .venv
             './**/*.md'
           fail: true
