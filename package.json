@@ -1,0 +1,21 @@
+{
+  "name": "boas-praticas-de-engenharia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Exemplos em TypeScript do guia de boas práticas de engenharia.",
+  "author": "Matheus Lobo Camara <matheusloboo2001@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "typescript": "7.0.2",
+    "vitest": "5.1.0"
+  }
+}

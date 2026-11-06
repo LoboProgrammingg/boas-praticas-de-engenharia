@@ -1,0 +1,45 @@
+[project]
+name = "boas-praticas-de-engenharia"
+version = "1.0.0"
+description = "Guia prático de boas práticas de engenharia de software e segurança, com exemplos testados em Python e TypeScript."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [{ name = "Matheus Lobo Camara", email = "matheusloboo2001@gmail.com" }]
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "hypothesis>=6.170.15",
+    "mypy>=2.4.1",
+    "pytest>=9.2.0",
+    "ruff>=0.17.4",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "C4", "UP", "SIM", "RUF", "N", "RET", "PT", "S", "PL"]
+ignore = [
+    "RUF001", "RUF002", "RUF003",  # textos em pt-BR usam acentos e aspas tipográficas
+    "PLR2004",                     # números literais deixam os exemplos legíveis
+]
+
+[tool.ruff.lint.per-file-ignores]
+"**/test_*.py" = ["S101"]                    # assert é a linguagem do pytest
+"**/{ruim,vulneravel}.py" = ["S", "PLR"]     # exemplos ruins existem para mostrar o problema
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+pretty = true
+
+[tool.pytest.ini_options]
+addopts = ["--import-mode=importlib", "--strict-markers", "--strict-config", "-ra"]
+testpaths = ["."]
+filterwarnings = ["error"]
