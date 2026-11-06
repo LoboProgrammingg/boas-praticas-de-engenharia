@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Se este guia ajudou seu trabalho, cite-o assim."
+title: "Boas Práticas de Engenharia"
+abstract: "Guia prático de boas práticas de engenharia de software e segurança, com exemplos testados em Python e TypeScript."
+type: software
+authors:
+  - given-names: Matheus Lobo
+    family-names: Camara
+    alias: LoboProgrammingg
+repository-code: "https://github.com/LoboProgrammingg/boas-praticas-de-engenharia"
+url: "https://github.com/LoboProgrammingg/boas-praticas-de-engenharia"
+license: MIT
+version: 1.0.0
+keywords:
+  - engenharia de software
+  - boas práticas
+  - clean code
+  - solid
+  - segurança
+  - owasp
