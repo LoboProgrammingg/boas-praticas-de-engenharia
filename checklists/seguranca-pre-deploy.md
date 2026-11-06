@@ -2,7 +2,7 @@
 
 Baseado no [OWASP Top 10:2025](https://owasp.org/Top10/2025/) e no
 [OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/).
-Detalhes e exemplos na seção 05, Segurança.
+Detalhes e exemplos na [seção 05](../05-seguranca/).
 
 ## Aplicação
 

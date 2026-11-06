@@ -36,7 +36,7 @@ infraestrutura, a persistência é trocável e o texto do e-mail muda sem tocar 
   admite que limites rígidos de tamanho nunca foram absolutos
   ([debate Ousterhout × Martin](https://github.com/johnousterhout/aposd-vs-clean-code)).
 - **Scripts e protótipos** de vida curta não têm "várias razões para mudar" ainda.
-- Separe quando a segunda razão de mudança **aparecer de verdade**, não quando for imaginada (YAGNI).
+- Separe quando a segunda razão de mudança **aparecer de verdade**, não quando for imaginada ([YAGNI](../../yagni/)).
 
 ## Relações
 

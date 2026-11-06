@@ -33,7 +33,7 @@ adapta ao contrato definido pela regra.
 
 ## Relações
 
-- É a **Dependency Rule** da Clean Architecture e o coração de Ports & Adapters (seção 03, Arquitetura).
+- É a **Dependency Rule** da Clean Architecture e o coração de Ports & Adapters (ver [Camadas, Hexagonal e Clean](../../../03-arquitetura/camadas-hexagonal-clean/)).
 - Interfaces pequenas (**ISP**) tornam as portas fáceis de implementar.
 - Habilita **dublês de teste** sem mocks de módulo.
 
