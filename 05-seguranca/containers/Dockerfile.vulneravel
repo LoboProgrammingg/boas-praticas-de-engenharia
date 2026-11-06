@@ -1,0 +1,19 @@
+# ANTI-EXEMPLO: cada linha marcada abaixo é um achado em revisão. Não use em produção.
+
+FROM python:latest
+# [CIS 4.2 / Scorecard Pinned-Dependencies] tag móvel: o build de hoje não é o de amanhã.
+
+ENV DATABASE_URL=postgres://app:<senha-escrita-no-dockerfile>@db:5432/app
+# [CIS 4.10] segredo na imagem: fica nas camadas e em `docker history`, mesmo se apagado depois.
+
+COPY . /app
+# [CIS 4.9 / 4.10] copia tudo, incluindo .env, .git e chaves esquecidas na pasta.
+
+WORKDIR /app
+RUN apt-get update && apt-get install -y build-essential curl && pip install -r requirements.txt
+# [CIS 4.3 / 4.7] compiladores ficam na imagem final; `update` e `install` em camadas separadas
+# cacheiam índices velhos; sem hashes, o pip aceita qualquer artefato com aquele nome.
+
+EXPOSE 8000
+# [CIS 4.1 / 4.6] sem USER, o processo roda como root; sem HEALTHCHECK.
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
