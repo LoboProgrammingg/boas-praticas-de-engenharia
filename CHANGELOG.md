@@ -7,6 +7,10 @@ adota o [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
 ## [Não lançado]
 
+### Alterado
+
+- Commits do repositório passam a ser assinados com chave SSH e exibem o selo Verified no GitHub.
+
 ## [1.0.0] - 2026-11-06
 
 ### Adicionado
